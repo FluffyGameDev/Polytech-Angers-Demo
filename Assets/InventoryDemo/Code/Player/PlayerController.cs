@@ -1,36 +1,32 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerController : MonoBehaviour
+
+namespace PolytechAngers.Player
 {
-    private static readonly string k_MoveAction = "Move";
-
-    [SerializeField]
-    private InputActionAsset m_PlayerInputs;
-    [SerializeField]
-    private CharacterController m_CharacterController;
-    [SerializeField]
-    private float m_Speed;
-
-    private InputAction m_MoveAction;
-
-    private void Start()
+    public class PlayerController : MonoBehaviour
     {
-        m_MoveAction = m_PlayerInputs[k_MoveAction];
-    }
+        private static readonly string k_MoveAction = "Move";
 
-    private void Update()
-    {
-        Vector2 inputDirection = m_MoveAction.ReadValue<Vector2>();
-        Vector3 movement = new Vector3(inputDirection.x, 0.0f, inputDirection.y).normalized * m_Speed;
-        m_CharacterController.Move(movement);
-    }
+        [SerializeField]
+        private InputActionAsset m_PlayerInputs;
+        [SerializeField]
+        private CharacterController m_CharacterController;
+        [SerializeField]
+        private float m_Speed;
 
-    public void OnInteract(InputAction.CallbackContext context)
-    {
-        if (context.performed)
+        private InputAction m_MoveAction;
+
+        private void Start()
         {
-            //TODO
+            m_MoveAction = m_PlayerInputs[k_MoveAction];
+        }
+
+        private void Update()
+        {
+            Vector2 inputDirection = m_MoveAction.ReadValue<Vector2>();
+            Vector3 movement = new Vector3(inputDirection.x, 0.0f, inputDirection.y) * m_Speed;
+            m_CharacterController.Move(movement);
         }
     }
 }

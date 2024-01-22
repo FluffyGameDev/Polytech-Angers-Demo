@@ -25,6 +25,6 @@ namespace PolytechAngers.Inventory
             m_Slots.Exists(slot => slot.AddItem(item, quantity));
         }
 
-        private List<InventorySlot> m_Slots;
+        private List<InventorySlot> m_Slots = new();
     }
 }

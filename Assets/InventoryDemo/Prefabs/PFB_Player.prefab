@@ -12,8 +12,12 @@ GameObject:
   - component: {fileID: 2010689779646086731}
   - component: {fileID: 30243345750316607}
   - component: {fileID: 594024879805211473}
+  - component: {fileID: 8600610151504690980}
   - component: {fileID: 5163764908417229751}
   - component: {fileID: 3900286365600527990}
+  - component: {fileID: 4798088842501589217}
+  - component: {fileID: 3019840121559731601}
+  - component: {fileID: 5731968820370720725}
   m_Layer: 0
   m_Name: PFB_Player
   m_TagString: Untagged
@@ -120,8 +124,9 @@ MonoBehaviour:
     m_ActionName: 'Player/Move[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]'
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3900286365600527990}
-        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+      - m_Target: {fileID: 4798088842501589217}
+        m_TargetAssemblyTypeName: PolytechAngers.Interaction.InteractionInstigator,
+          Assembly-CSharp
         m_MethodName: OnInteract
         m_Mode: 0
         m_Arguments:
@@ -179,6 +184,27 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!135 &8600610151504690980
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4472011612271823735}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!143 &5163764908417229751
 CharacterController:
   m_ObjectHideFlags: 0
@@ -221,3 +247,42 @@ MonoBehaviour:
     type: 3}
   m_CharacterController: {fileID: 5163764908417229751}
   m_Speed: 0.15
+--- !u!114 &4798088842501589217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4472011612271823735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10617c318997f7449bff072266bad373, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3019840121559731601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4472011612271823735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f978972b37d9caf42ae638f56c07b179, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PlayerInventoryHolder: {fileID: 5731968820370720725}
+--- !u!114 &5731968820370720725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4472011612271823735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 444ea070353729f42a4f93032e5f6469, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_DefaultInventoryData: {fileID: 11400000, guid: 0827f8da9673e0d498293690d9454388,
+    type: 2}
