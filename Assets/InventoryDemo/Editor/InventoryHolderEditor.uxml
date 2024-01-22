@@ -1,0 +1,5 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <uie:PropertyField binding-path="m_DefaultInventoryData" />
+    <ui:Label text="Inventory:" style="margin-top: 12px; margin-bottom: 8px;" />
+    <ui:ListView name="lst_items" show-border="true" selection-type="None" show-alternating-row-backgrounds="All" />
+</ui:UXML>
