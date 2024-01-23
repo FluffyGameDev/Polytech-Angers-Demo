@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d26d1b54c0e6c3f4c93b35e7f4eef504, type: 3}
-  m_Name: PlayerInventoryViewModel
+  m_Name: MerchantInventoryViewModel
   m_EditorClassIdentifier: 
   m_ShowInventory: 0
-  m_OwnerName: Player
+  m_OwnerName: Bob

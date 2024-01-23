@@ -23,6 +23,14 @@ MonoBehaviour:
     m_Key: Bread
     m_Metadata:
       m_Items: []
+  - m_Id: 347559871406080
+    m_Key: MerchantName_Bob
+    m_Metadata:
+      m_Items: []
+  - m_Id: 347631166185472
+    m_Key: MerchantName_Andy
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
