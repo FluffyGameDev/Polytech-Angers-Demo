@@ -17,7 +17,15 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: d27aad8e058072f40ab0d599a69d26e5, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 8982913024
+    m_Localized: 'e2876f76e8af02d44a5f9b2a6570222a[SPR_Items_Apple_en]'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33314070528
+    m_Localized: 'e2876f76e8af02d44a5f9b2a6570222a[SPR_Items_Bread_en]'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

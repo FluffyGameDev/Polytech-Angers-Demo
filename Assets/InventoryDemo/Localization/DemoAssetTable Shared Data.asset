@@ -24,7 +24,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   m_Metadata:
-    m_Items: []
+    m_Items:
+    - rid: 4302072877682524219
   m_KeyGenerator:
     rid: 4302072852819214604
   references:
@@ -35,3 +36,17 @@ MonoBehaviour:
         asm: Unity.Localization}
       data:
         m_CustomEpoch: 1705949250785
+    - rid: 4302072877682524219
+      type: {class: AssetTypeMetadata, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries:
+        - m_KeyId: 8982913024
+          m_TableCodes:
+          - en
+          - fr
+        - m_KeyId: 33314070528
+          m_TableCodes:
+          - en
+          - fr
+        m_TypeString: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
