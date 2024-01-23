@@ -224,6 +224,9 @@ MonoBehaviour:
   m_PlayerInputs: {fileID: -944628639613478452, guid: f4cd24aa9405e5642bee4c02be02f8cf,
     type: 3}
   m_CharacterController: {fileID: 5163764908417229751}
+  m_InventoryHolder: {fileID: 5731968820370720725}
+  m_InventoryViewModel: {fileID: 11400000, guid: 90e1228395540174f9273b0dcaf0bd12,
+    type: 2}
   m_Speed: 0.15
 --- !u!114 &4798088842501589217
 MonoBehaviour:

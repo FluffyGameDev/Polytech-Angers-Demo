@@ -1,3 +1,5 @@
+using PolytechAngers.Inventory;
+using PolytechAngers.UI;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -13,6 +15,10 @@ namespace PolytechAngers.Player
         [SerializeField]
         private CharacterController m_CharacterController;
         [SerializeField]
+        private InventoryHolder m_InventoryHolder;
+        [SerializeField]
+        private InventoryViewModel m_InventoryViewModel;
+        [SerializeField]
         private float m_Speed;
 
         private InputAction m_MoveAction;
@@ -20,6 +26,7 @@ namespace PolytechAngers.Player
         private void Start()
         {
             m_MoveAction = m_PlayerInputs[k_MoveAction];
+            m_InventoryViewModel.BindInventory(m_InventoryHolder.Inventory);
         }
 
         private void Update()

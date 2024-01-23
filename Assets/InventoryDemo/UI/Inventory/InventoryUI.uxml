@@ -1,0 +1,17 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:VisualElement picking-mode="Ignore" data-source="project://database/Assets/InventoryDemo/Data/UI/ViewModels/PlayerInventoryViewModel.asset?fileID=11400000&amp;guid=90e1228395540174f9273b0dcaf0bd12&amp;type=2#PlayerInventoryViewModel" style="flex-grow: 1; position: absolute; width: 240px; height: 240px; background-color: rgba(0, 0, 0, 0.57);">
+        <ui:Label picking-mode="Ignore">
+            <Bindings>
+                <ui:DataBinding property="text" binding-mode="ToTarget" data-source-path="OwnerName" />
+            </Bindings>
+        </ui:Label>
+        <ui:ListView binding-source-selection-mode="AutoAssign" item-template="project://database/Assets/InventoryDemo/UI/Inventory/InventorySlotUI.uxml?fileID=9197481963319205126&amp;guid=a222306b32620134f9211dbeab849b99&amp;type=3#InventorySlotUI" selection-type="None" focusable="false">
+            <Bindings>
+                <ui:DataBinding property="itemsSource" binding-mode="ToTarget" data-source-path="Slots" />
+            </Bindings>
+        </ui:ListView>
+        <Bindings>
+            <ui:DataBinding property="style.display" binding-mode="ToTarget" data-source-path="ShowInventory" source-to-ui-converters="Bool To DisplayStyle" />
+        </Bindings>
+    </ui:VisualElement>
+</ui:UXML>
