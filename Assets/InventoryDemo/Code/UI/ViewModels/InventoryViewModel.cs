@@ -35,9 +35,19 @@ namespace PolytechAngers.UI
         private List<InventorySlotViewModel> m_Slots = new();
 
         [CreateProperty]
-        public string OwnerName => m_OwnerName;
+        public string OwnerName
+        {
+            get => m_OwnerName;
+            set => m_OwnerName = value;
+        }
+
         [CreateProperty]
-        public bool ShowInventory => m_ShowInventory;
+        public bool ShowInventory
+        {
+            get => m_ShowInventory;
+            set => m_ShowInventory = value;
+        }
+
         [CreateProperty]
         public List<InventorySlotViewModel> Slots => m_Slots;
     }

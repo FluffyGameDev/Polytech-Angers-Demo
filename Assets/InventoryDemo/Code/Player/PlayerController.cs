@@ -35,5 +35,13 @@ namespace PolytechAngers.Player
             Vector3 movement = new Vector3(inputDirection.x, 0.0f, inputDirection.y) * m_Speed;
             m_CharacterController.Move(movement);
         }
+
+        public void OnToggleInventory(InputAction.CallbackContext context)
+        {
+            if (context.performed)
+            {
+                m_InventoryViewModel.ShowInventory = !m_InventoryViewModel.ShowInventory;
+            }
+        }
     }
 }
