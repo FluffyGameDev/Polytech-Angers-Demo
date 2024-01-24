@@ -19,6 +19,8 @@ namespace PolytechAngers.Player
         [SerializeField]
         private InventoryViewModel m_InventoryViewModel;
         [SerializeField]
+        private ShowInventoryEvent m_ShowInventoryEvent;
+        [SerializeField]
         private float m_Speed;
 
         private InputAction m_MoveAction;
@@ -27,6 +29,8 @@ namespace PolytechAngers.Player
         {
             m_MoveAction = m_PlayerInputs[k_MoveAction];
             m_InventoryViewModel.BindInventory(m_InventoryHolder.Inventory);
+            m_InventoryViewModel.OwnerName = m_InventoryHolder.HolderName;
+            m_InventoryViewModel.ShowInventory = false;
         }
 
         private void Update()
@@ -40,6 +44,7 @@ namespace PolytechAngers.Player
         {
             if (context.performed)
             {
+                m_ShowInventoryEvent.TriggerEvent(m_InventoryHolder);
                 m_InventoryViewModel.ShowInventory = !m_InventoryViewModel.ShowInventory;
             }
         }

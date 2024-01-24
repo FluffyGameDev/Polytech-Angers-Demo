@@ -31,6 +31,10 @@ MonoBehaviour:
     m_Key: MerchantName_Andy
     m_Metadata:
       m_Items: []
+  - m_Id: 767948980248576
+    m_Key: Player Name
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -6,7 +6,7 @@
                     <ui:DataBinding property="text" binding-mode="ToTarget" data-source-path="OwnerName" />
                 </Bindings>
             </ui:Label>
-            <ui:ListView binding-source-selection-mode="AutoAssign" item-template="project://database/Assets/InventoryDemo/UI/Inventory/InventorySlotUI.uxml?fileID=9197481963319205126&amp;guid=a222306b32620134f9211dbeab849b99&amp;type=3#InventorySlotUI" selection-type="None" focusable="false">
+            <ui:ListView binding-source-selection-mode="AutoAssign" selection-type="None" focusable="false" item-template="project://database/Assets/InventoryDemo/UI/Inventory/MVVM/InventorySlotUI.uxml?fileID=9197481963319205126&amp;guid=a222306b32620134f9211dbeab849b99&amp;type=3#InventorySlotUI">
                 <Bindings>
                     <ui:DataBinding property="itemsSource" binding-mode="ToTarget" data-source-path="Slots" />
                 </Bindings>
@@ -21,7 +21,7 @@
                     <ui:DataBinding property="text" binding-mode="ToTarget" data-source-path="OwnerName" />
                 </Bindings>
             </ui:Label>
-            <ui:ListView binding-source-selection-mode="AutoAssign" item-template="project://database/Assets/InventoryDemo/UI/Inventory/InventorySlotUI.uxml?fileID=9197481963319205126&amp;guid=a222306b32620134f9211dbeab849b99&amp;type=3#InventorySlotUI" selection-type="None" focusable="false">
+            <ui:ListView binding-source-selection-mode="AutoAssign" selection-type="None" focusable="false" item-template="project://database/Assets/InventoryDemo/UI/Inventory/MVVM/InventorySlotUI.uxml?fileID=9197481963319205126&amp;guid=a222306b32620134f9211dbeab849b99&amp;type=3#InventorySlotUI">
                 <Bindings>
                     <ui:DataBinding property="itemsSource" binding-mode="ToTarget" data-source-path="Slots" />
                 </Bindings>

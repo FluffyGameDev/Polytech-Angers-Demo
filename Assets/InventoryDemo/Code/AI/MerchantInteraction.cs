@@ -9,11 +9,11 @@ namespace PolytechAngers.AI
     public class MerchantInteraction : Interactable
     {
         [SerializeField]
-        private LocalizedString m_MerchantName;
-        [SerializeField]
         private InventoryHolder m_MerchantInventory;
         [SerializeField]
         private InventoryViewModel m_InventoryViewModel;
+        [SerializeField]
+        private ShowInventoryEvent m_ShowInventoryEvent;
 
         public override bool CanInteract()
         {
@@ -22,12 +22,19 @@ namespace PolytechAngers.AI
 
         public override void Interact()
         {
+            m_ShowInventoryEvent.TriggerEvent(m_MerchantInventory);
+
             m_InventoryViewModel.ShowInventory = !m_InventoryViewModel.ShowInventory;
             if (m_InventoryViewModel.ShowInventory)
             {
-                m_InventoryViewModel.OwnerName = m_MerchantName.GetLocalizedString();
+                m_InventoryViewModel.OwnerName = m_MerchantInventory.HolderName;
                 m_InventoryViewModel.BindInventory(m_MerchantInventory.Inventory);
             }
+        }
+
+        private void Awake()
+        {
+            m_InventoryViewModel.ShowInventory = false;
         }
     }
 }

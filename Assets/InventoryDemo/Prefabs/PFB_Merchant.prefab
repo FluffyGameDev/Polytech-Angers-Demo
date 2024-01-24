@@ -114,9 +114,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd55dd5768e60954989c948c70fa2253, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_MerchantName:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   m_MerchantInventory: {fileID: 2462296560224973108}
   m_InventoryViewModel: {fileID: 11400000, guid: 75c72b5f908442f43bd42f137135b56f,
     type: 2}
+  m_ShowInventoryEvent: {fileID: 11400000, guid: 10db23b3e4cd0d94493c806a49416a39,
+    type: 2}
+  references:
+    version: 2
+    RefIds: []
 --- !u!135 &4878989201747887623
 SphereCollider:
   m_ObjectHideFlags: 0

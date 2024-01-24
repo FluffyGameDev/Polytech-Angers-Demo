@@ -243,6 +243,8 @@ MonoBehaviour:
   m_InventoryHolder: {fileID: 5731968820370720725}
   m_InventoryViewModel: {fileID: 11400000, guid: 90e1228395540174f9273b0dcaf0bd12,
     type: 2}
+  m_ShowInventoryEvent: {fileID: 11400000, guid: 70c15fc2e7132cb4ca43d3f73c9dba49,
+    type: 2}
   m_Speed: 0.15
 --- !u!114 &4798088842501589217
 MonoBehaviour:
@@ -281,5 +283,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 444ea070353729f42a4f93032e5f6469, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_HolderName:
+    m_TableReference:
+      m_TableCollectionName: GUID:0c1f00587ccbb9c4e951e1f7244b8e42
+    m_TableEntryReference:
+      m_KeyId: 767948980248576
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   m_DefaultInventoryData: {fileID: 11400000, guid: 0827f8da9673e0d498293690d9454388,
     type: 2}
+  references:
+    version: 2
+    RefIds: []
