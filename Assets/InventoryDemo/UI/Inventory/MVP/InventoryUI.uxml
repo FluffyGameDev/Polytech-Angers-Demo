@@ -1,12 +1,13 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
-    <ui:VisualElement picking-mode="Ignore" style="flex-direction: row; flex-grow: 1;">
-        <ui:VisualElement name="ctr_player-inventory" picking-mode="Ignore" style="width: 240px; height: 240px; background-color: rgba(0, 0, 0, 0.57); display: none;">
-            <ui:Label name="lbl_owner-name" picking-mode="Ignore" />
-            <ui:ListView name="lst_items" selection-type="None" focusable="false" item-template="project://database/Assets/InventoryDemo/UI/Inventory/MVP/InventorySlotUI.uxml?fileID=9197481963319205126&amp;guid=c819fe5b390a33f4fbb46cf68ed31162&amp;type=3#InventorySlotUI" />
+    <Style src="project://database/Assets/InventoryDemo/UI/Inventory/InventoryUI.uss?fileID=7433441132597879392&amp;guid=4487010b502b23643b9d9bf9c77ecdec&amp;type=3#InventoryUI" />
+    <ui:VisualElement picking-mode="Ignore" class="inventory-hud">
+        <ui:VisualElement name="ctr_player-inventory" picking-mode="Ignore" class="inventory" style="display: none;">
+            <ui:Label name="lbl_owner-name" picking-mode="Ignore" class="inventory__owner" />
+            <ui:ListView name="lst_items" selection-type="None" focusable="false" item-template="project://database/Assets/InventoryDemo/UI/Inventory/MVP/InventorySlotUI.uxml?fileID=9197481963319205126&amp;guid=c819fe5b390a33f4fbb46cf68ed31162&amp;type=3#InventorySlotUI" class="inventory__items" />
         </ui:VisualElement>
-        <ui:VisualElement name="ctr_merchant-inventory" picking-mode="Ignore" style="width: 240px; height: 240px; background-color: rgba(0, 0, 0, 0.57); margin-left: 8px; display: none;">
-            <ui:Label name="lbl_owner-name" picking-mode="Ignore" />
-            <ui:ListView name="lst_items" selection-type="None" focusable="false" item-template="project://database/Assets/InventoryDemo/UI/Inventory/MVP/InventorySlotUI.uxml?fileID=9197481963319205126&amp;guid=c819fe5b390a33f4fbb46cf68ed31162&amp;type=3#InventorySlotUI" />
+        <ui:VisualElement name="ctr_merchant-inventory" picking-mode="Ignore" class="inventory" style="display: none;">
+            <ui:Label name="lbl_owner-name" picking-mode="Ignore" class="inventory__owner" />
+            <ui:ListView name="lst_items" selection-type="None" focusable="false" item-template="project://database/Assets/InventoryDemo/UI/Inventory/MVP/InventorySlotUI.uxml?fileID=9197481963319205126&amp;guid=c819fe5b390a33f4fbb46cf68ed31162&amp;type=3#InventorySlotUI" class="inventory__items" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
